@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: rgba(2,6,23,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  background: linear-gradient(135deg, #7c7cff, #a855f7);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #e5e7eb;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #a5b4fc;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.badge {
+  background: rgba(124,124,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #a5b4fc;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 56px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #7c7cff, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero h3 {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px 0;
+  opacity: 0.85;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary {
+  background: linear-gradient(135deg, #7c7cff, #a855f7);
+  color: #fff;
+}
+
+.secondary {
+  border: 1px solid #7c7cff;
+  color: #7c7cff;
+}
+
+/* SECTIONS */
+.section {
+  padding: 90px 80px;
+  text-align: center;
+}
+
+.section-label {
+  background: rgba(124,124,255,0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #a5b4fc;
+}
+
+.section-title {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 0.8;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(30,41,59,0.6);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.tech {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a5b4fc;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
